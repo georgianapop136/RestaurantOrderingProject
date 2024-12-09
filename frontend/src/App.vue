@@ -11,21 +11,18 @@
                     <router-view></router-view>
                 </div>
             </div>
-            <FooterComponent />
         </div>
     </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
-import FooterComponent from './components/FooterComponent.vue';
 import { mapActions } from 'vuex';
 import { mapState } from 'vuex';
 export default {
     name: 'App',
     components: {
-        NavBar,
-        FooterComponent
+        NavBar
     },
 
     // created() {

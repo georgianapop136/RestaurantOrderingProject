@@ -4,11 +4,7 @@
         </router-link>
 
         <nav class="navbar">
-            <router-link @click="scrollToTop()" to="/">home</router-link>
-            <router-link @click="scrollToTop()" to="/about">about</router-link>
-            <router-link @click="scrollToTop()" to="/promotions">promotions</router-link>
-            <router-link @click="scrollToTop()" to="/menu">menu</router-link>
-            <router-link @click="scrollToTop()" to="/table">table</router-link>
+            <router-link @click="scrollToTop()" to="/">menu</router-link>
         </nav>
 
         <div class="icons">

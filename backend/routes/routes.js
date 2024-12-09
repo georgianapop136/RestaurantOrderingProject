@@ -24,10 +24,6 @@ import {
 } from "../controllers/cart.js";
 
 import {
-    createBooking
-} from "../controllers/booktable.js";
-
-import {
     createBillDetails,getBillDetailsById
 } from "../controllers/billdetails.js";
 
@@ -90,11 +86,6 @@ router.delete("/api/cartItem/:user_id/:food_id", deleteItem);
 
 // delete all items in cart
 router.delete("/api/cartItem/:id", deleteItems);
-
-
-
-////////////////////////// Booking ////////////////////////////////
-router.post("/api/booking", createBooking);
 
 
 

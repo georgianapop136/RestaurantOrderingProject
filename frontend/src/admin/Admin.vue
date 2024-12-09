@@ -32,7 +32,7 @@ export default {
     data() {
         return {
             adminObj: { pass: "" },
-            key: "25082002",
+            key: "admin",
             errors: [],
         }
     },

@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="text" name="coAddress" id="coAddress" placeholder="Address in Hanoi, Vietnam"
+                        <input type="text" name="coAddress" id="coAddress" placeholder="Address"
                             class="form-control" v-model="checkoutObj.address" />
                         <p class="error-mess" v-if="errorObj.addressErr.length > 0">{{ errorObj.addressErr[0] }}</p>
                     </div>
@@ -193,14 +193,6 @@ export default {
                 this.errorObj.phoneErr.push('Entering phone number is required');
             }
             else {
-                if (!this.checkoutObj.phone.startsWith('84')) {
-                    this.errorObj.phoneErr.push('Phone numbers must start with 84');
-                }
-
-                if (this.checkoutObj.phone.length != 11) {
-                    this.errorObj.phoneErr.push('Phone numbers must have exactly 11 digits');
-                }
-
                 if (!/[0-9]{11}/.test(this.checkoutObj.phone)) {
                     this.errorObj.phoneErr.push('Phone numbers can only contain numbers');
                 }
@@ -220,13 +212,6 @@ export default {
                     this.errorObj.numErr.push('Entering card number is required');
                 }
                 else {
-                    if (!this.cardObj.number.startsWith('4')) {
-                        this.errorObj.numErr.push('Visa card numbers must start with 4');
-                    }
-
-                    if (this.cardObj.number.length != 16) {
-                        this.errorObj.numErr.push('Visa card numbers must have exactly 16 digits');
-                    }
 
                     if (!/[0-9]{16}/.test(this.cardObj.number)) {
                         this.errorObj.numErr.push('Visa card numbers can only contain numbers');
