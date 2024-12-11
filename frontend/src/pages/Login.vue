@@ -140,7 +140,7 @@ export default {
   font-size: 2rem;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #272bae;
+  color: #000000;
   margin: 0;
 }
 
@@ -150,7 +150,7 @@ export default {
   background: #f7f7f7;
   padding: 2rem 1.2rem;
   font-size: 1.6rem;
-  color: #272bae;
+  color: #000000;
   text-transform: none;
   width: 100%;
   border: none;
@@ -170,7 +170,7 @@ export default {
 }
 
 .login-container .login-form-container form p a {
-  color: #272bae;
+  color: #000000;
 }
 
 .login-container .login-form-container form p a:hover {

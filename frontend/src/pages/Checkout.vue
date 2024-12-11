@@ -8,7 +8,7 @@
         autocomplete="off"
       >
         <div class="checkout-heading">
-          <h3>Few more step to place your order<span>Total</span></h3>
+          <h3>Few more steps to place your order<span>Total</span></h3>
           <h3 v-if="user">
             {{ user.user_name }}'s Order<span
               >${{ calculateSummaryPrice()[3] }}</span
@@ -454,7 +454,7 @@ const vUpcase = {
   padding-bottom: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
-  color: #272bae;
+  color: #000000;
   margin: 0;
 }
 
@@ -464,7 +464,7 @@ const vUpcase = {
   background: #f7f7f7;
   padding: 2rem 1.2rem;
   font-size: 1.6rem;
-  color: #272bae;
+  color: #000000;
   text-transform: none;
   width: 100%;
   border: none;
@@ -496,11 +496,11 @@ const vUpcase = {
 }
 
 .checkout-container .checkout-form-container form p a {
-  color: #272bae;
+  color: #000000;
 }
 
 .checkout-container .checkout-form-container form p a:hover {
-  color: #272bae;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -537,6 +537,6 @@ const vUpcase = {
   h3:first-of-type
   span {
   padding-right: 0px;
-  color: #272bae;
+  color: #000000;
 }
 </style>

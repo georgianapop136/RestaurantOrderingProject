@@ -24,7 +24,7 @@
               <div v-if="!filterFoods.length">
                 <div class="box-content row no-food">
                   <div class="content">
-                    <h2 style="color: #272bae">
+                    <h2 style="color: #000000">
                       You do not have any items in your cart, go shop now!
                     </h2>
                   </div>
@@ -159,18 +159,6 @@
               </div>
             </div>
 
-            <div class="box">
-              <div class="box-title">
-                <h3>Support</h3>
-              </div>
-              <div class="box-content text-center">
-                <h3><i class="fa fa-phone"></i> +84 123 123 123</h3>
-                <span class="small">
-                  Please contact with us if you have any questions. We are
-                  avalible 24h.
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -303,7 +291,7 @@ export default {
 }
 
 .item-name {
-  color: #272bae;
+  color: #000000;
 }
 
 .cart-product-img {
@@ -453,7 +441,6 @@ export default {
     width: 100%;
     max-height: 100%;
     filter: brightness(60%);
-    padding: none;
   }
 
   .image-box img {

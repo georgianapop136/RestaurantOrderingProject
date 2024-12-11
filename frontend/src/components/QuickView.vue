@@ -153,7 +153,7 @@ export default {
 .quick-view .quick-view-inner h2 {
   margin: 0;
   font-size: 32px;
-  color: #272bae;
+  color: #000000;
 }
 
 .quick-view .quick-view-inner .product-detail .image img {

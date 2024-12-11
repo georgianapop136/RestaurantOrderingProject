@@ -296,32 +296,12 @@
         <div class="row box-container">
           <div v-for="(f, index) in currentPageItems" :key="index">
             <div class="box">
-              <a href="" class="fas fa-heart"></a>
               <div class="image">
                 <img :src="require(`../assets/images/${f.food_src}`)" alt="" />
               </div>
               <div class="content">
                 <h3>{{ f.food_name }}</h3>
-                <div class="stars">
-                  <div
-                    v-for="s in Math.floor(parseFloat(f.food_star))"
-                    :key="s"
-                    class="d-inline"
-                  >
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div
-                    v-if="
-                      parseFloat(f.food_star) -
-                        Math.floor(parseFloat(f.food_star)) ==
-                      0.5
-                    "
-                    class="d-inline"
-                  >
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <span> ({{ f.food_vote }}) </span>
-                </div>
+
                 <div class="desc">
                   <p>{{ f.food_desc }}</p>
                 </div>
@@ -533,7 +513,7 @@ export default {
         this.foodObj.category != e.target.value &&
         this.previousCategoryClicked != ""
       ) {
-        this.previousCategoryClicked.target.style.background = "#272bae";
+        this.previousCategoryClicked.target.style.background = "#000000";
       }
       this.foodObj.category = e.target.value;
       this.previousCategoryClicked = e;
@@ -704,7 +684,7 @@ hr {
 }
 
 .filter-heading h1 {
-  color: #272bae;
+  color: #000000;
 }
 
 .filter-option {
@@ -737,7 +717,7 @@ hr {
   height: 40px;
   font-size: 20px;
   color: white;
-  background: #272bae;
+  background: #000000;
 }
 
 ::placeholder {
@@ -753,7 +733,7 @@ hr {
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
-  background-color: #272bae;
+  background-color: #000000;
 }
 
 .menu-section .menu-tabs .menu-tab-item {
@@ -770,13 +750,9 @@ hr {
 }
 
 .menu-section .menu-tabs .menu-tab-item:hover {
-  background-color: #272bae !important;
+  background-color: #000000 !important;
 }
 
-.menu-section .menu-tabs .menu-tab-item p {
-  padding: none;
-  margin: none;
-}
 
 .menu-section .box-container {
   display: grid;
@@ -790,19 +766,6 @@ hr {
   background: #f7f7f7;
   padding: 2rem;
   text-align: center;
-}
-
-.menu-section .box-container .box .fa-heart {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 2.5rem;
-  color: #666;
-  cursor: pointer;
-}
-
-.menu-section .box-container .box .fa-heart:hover {
-  color: #272bae;
 }
 
 .menu-section .box-container .box .image {
@@ -855,9 +818,9 @@ hr {
 }
 
 .menu-section .action-row .action-btn {
-  background-color: #272bae;
+  background-color: #000000;
   padding: 3px;
-  border: 2px solid #272bae;
+  border: 2px solid #000000;
   border-radius: 30%;
   color: white;
 }
@@ -913,7 +876,7 @@ hr {
 
   .filter-drop-down {
     display: block;
-    background-color: #272bae;
+    background-color: #000000;
     color: white;
     font-weight: 400;
     margin-bottom: 15px;

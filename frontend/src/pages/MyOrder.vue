@@ -182,7 +182,7 @@ export default {
   padding: 12px 0px;
   color: white;
   font-size: 16px;
-  background: #272bae;
+  background: #000000;
 }
 
 .card-head span:first-of-type {

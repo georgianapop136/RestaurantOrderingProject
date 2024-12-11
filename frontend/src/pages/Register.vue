@@ -390,7 +390,7 @@ export default {
 }
 
 .register-container .register-form-container form p a {
-  color: #272bae;
+  color: #000000;
 }
 
 .register-container .register-form-container form p a:hover {

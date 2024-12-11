@@ -1,13 +1,9 @@
 <template>
   <div class="header">
     <router-link @click="scrollToTop()" to="/" class="logo"
-      ><img src="../assets/images/taco-logo.png" alt="" />4 stars E-Business
+      ><img src="../assets/images/taco-logo.png" alt="" />3 stars E-Business
       restaurant
     </router-link>
-
-    <nav class="navbar">
-      <router-link @click="scrollToTop()" to="/">menu</router-link>
-    </nav>
 
     <div class="icons">
       <div id="menu-btn" class="fas fa-bars menu-btn" @click="showNav"></div>
@@ -117,12 +113,12 @@ export default {
 .header .logo {
   font-size: 2.5rem;
   font-weight: bolder;
-  color: #272bae;
+  color: #000000;
 }
 
 .header .logo img {
   padding-right: 0.5rem;
-  color: #272bae;
+  color: #000000;
 }
 
 .header .navbar a {
@@ -132,7 +128,7 @@ export default {
 }
 
 .header .navbar a:hover {
-  color: #272bae;
+  color: #000000;
 }
 
 .header .navbar a.router-link-exact-active {
@@ -145,7 +141,7 @@ export default {
   line-height: 4.5rem;
   font-size: 2rem;
   background: #f7f7f7;
-  color: #272bae;
+  color: #000000;
   border-radius: 0.5rem;
   margin-left: 0.3rem;
   cursor: pointer;
@@ -154,7 +150,7 @@ export default {
 
 .header .icons div:hover {
   color: #fff;
-  background: #272bae !important;
+  background: #000000 !important;
 }
 
 .header .icons a.router-link-exact-active .cart {
@@ -175,7 +171,7 @@ export default {
 
 .header .icons .account .drop-down-select a {
   text-decoration: none;
-  color: #272bae;
+  color: #000000;
   font-size: 15px;
   font-weight: 500;
   float: left;

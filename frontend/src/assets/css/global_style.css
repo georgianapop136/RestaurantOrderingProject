@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #272bae;
+  background: #000000;
   border-radius: 5rem;
 }
 
@@ -45,12 +45,12 @@ html::-webkit-scrollbar-thumb {
 .heading span {
   font-family: "Satisfy", cursive;
   font-size: 3rem;
-  color: #272bae;
+  color: #000000;
 }
 
 .heading h3 {
   font-size: 3rem;
-  color: #272bae;
+  color: #000000;
 }
 
 .btn {
@@ -58,7 +58,7 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.7rem;
   cursor: pointer;
   color: #fff;
-  background: #272bae;
+  background: #000000;
   border-radius: 0.5rem;
 }
 
@@ -68,7 +68,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .btn:disabled {
-  background-color: #272bae !important;
+  background-color: #000000 !important;
   color: #fff;
 }
 
