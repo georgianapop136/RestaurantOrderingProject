@@ -249,4 +249,4 @@ Această documentație poate fi extinsă pe baza cerințelor specifice proiectul
 
 ## Screenshots of the application
 
-[! Restaurant System] (frontend\src\assets\images\SS1.jpg)
+![ Restaurant System] (frontend\src\assets\images\SS1.jpg)
