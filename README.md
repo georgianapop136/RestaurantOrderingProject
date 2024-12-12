@@ -7,7 +7,7 @@ Acest API oferă funcționalități backend pentru gestionarea alimentelor, util
 
 1. Clonează acest repository:
    ```bash
-   git clone <URL-ul-tău>
+   git clone <URL>
    ```
 2. Navighează în directorul proiectului:
    ```bash
