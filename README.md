@@ -247,6 +247,6 @@ Integrarea cu un backend REST API este esențială pentru eficiența acestui tip
 
 Această documentație poate fi extinsă pe baza cerințelor specifice proiectului și a eventualelor schimbări implementate în viitor.
 
-## Screenshots of the application
+## Screenshots
 
-![ Restaurant System] (assets/images/SS1.jpg)
+![test] (frontend\src\assets\images\SS1.jpg)
