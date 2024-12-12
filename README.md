@@ -111,3 +111,109 @@ Authorization: Bearer <token>
 - **Token JWT**: Metodă de autentificare care oferă acces securizat la API.
 - **Cod de stare**: Mesaj numeric returnat de server pentru a indica succesul sau eșecul unei cereri.
 
+# Restaurant Management Frontend
+
+## Descriere
+Acest proiect reprezintă frontend-ul aplicației pentru gestionarea comenzilor într-un restaurant. Este construit utilizând Vue.js și se conectează la un backend REST API pentru gestionarea comenzilor, meniurilor și altor operații specifice unui restaurant. Scopul aplicației este de a optimiza procesele interne ale restaurantului, oferind o interfață intuitivă pentru angajați și administratori.
+
+## Cerințe
+- Node.js v14+
+- NPM v6+
+
+## Configurare proiect
+1. Clonați repository-ul:
+   ```bash
+   git clone <repository-url>
+   cd frontend
+   ```
+
+2. Instalați dependențele:
+   ```bash
+   npm install
+   ```
+
+3. Porniți serverul de dezvoltare:
+   ```bash
+   npm run serve
+   ```
+
+4. Compilați pentru producție:
+   ```bash
+   npm run build
+   ```
+
+## Structura proiectului
+```
+frontend/
+|-- src/
+|   |-- assets/         # Resurse statice (imagini, stiluri)
+|   |-- components/     # Componente reutilizabile Vue.js
+|   |-- views/          # Pagini principale
+|   |-- router/         # Configurația rutele aplicației
+|   |-- store/          # Gestionarea stării aplicației (Vuex)
+|   |-- App.vue         # Componenta principală
+|   |-- main.js         # Fișierul de intrare
+|
+|-- public/             # Fișiere publice
+|-- package.json        # Configurația proiectului
+|-- babel.config.js     # Configurație Babel
+```
+
+## Dependințe principale
+- **Vue.js**: Framework pentru interfața utilizator.
+- **Vue Router**: Gestionarea navigării între pagini.
+- **Vuex**: Managementul stării globale a aplicației.
+- **Axios**: Pentru apelurile HTTP către backend.
+
+## Endpoint-uri backend
+Aplicația utilizează următoarele endpoint-uri principale pentru comunicarea cu backend-ul:
+
+### 1. Gestionarea comenzilor
+- **GET /orders**: Listează toate comenzile.
+- **POST /orders**: Creează o comandă nouă.
+- **PUT /orders/{id}**: Actualizează o comandă existentă.
+- **DELETE /orders/{id}**: Șterge o comandă.
+
+### 2. Gestionarea meniului
+- **GET /menu**: Listează toate elementele din meniu.
+- **POST /menu**: Adaugă un element nou într-un meniu.
+- **PUT /menu/{id}**: Actualizează un element din meniu.
+- **DELETE /menu/{id}**: Șterge un element din meniu.
+
+### 3. Gestionarea utilizatorilor
+- **POST /auth/login**: Autentificare utilizator.
+- **GET /users**: Listează utilizatorii (doar pentru admini).
+
+## Funcționalități principale
+- **Vizualizare meniuri**: Utilizatorii pot accesa și explora meniul disponibil.
+- **Adăugare produse într-o comandă**: Creează comenzi personalizate pe baza preferințelor clienților.
+- **Gestionarea comenzilor active**: Permite actualizarea stării comenzilor (ex. preluare, livrare, finalizare).
+- **Autentificare utilizator**: Gestionarea accesului și rolurilor, asigurând securitatea operațiunilor (admin, ospătar).
+- **Interfață responsive**: Optimizată pentru utilizare pe diverse dispozitive.
+- **Notificări vizuale**: Alertă utilizatorii într-un mod intuitiv despre starea comenzilor sau erorile apărute.
+
+## Utilitatea API-ului
+Integrarea cu un backend REST API este esențială pentru eficiența acestui tip de business:
+- **Centralizarea datelor**: Toate comenzile, meniurile și informațiile despre utilizatori sunt gestionate într-un singur loc.
+- **Actualizări într-un timp real**: Permite sincronizarea instantanee a comenzilor între ospătari, bucătărie și administrație.
+- **Flexibilitate**: Scalabilitatea API-ului permite integrarea cu alte aplicații (ex. sisteme de livrare).
+- **Securitate**: Gestionarea rolurilor și autentificarea asigură că doar utilizatorii autorizați pot accesa funcționalități sensibile.
+
+## Linting și stilizare cod
+- Rulează comanda pentru verificarea stilului codului:
+  ```bash
+  npm run lint
+  ```
+
+## Referințe suplimentare
+- [Vue.js Documentation](https://vuejs.org/)
+- [Axios Documentation](https://axios-http.com/)
+- [Vue Router Documentation](https://router.vuejs.org/)
+- [Vuex Documentation](https://vuex.vuejs.org/)
+
+---
+Această documentație poate fi extinsă pe baza cerințelor specifice proiectului și a eventualelor schimbări implementate în viitor.
+
+
+
+
