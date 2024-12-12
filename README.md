@@ -1,4 +1,4 @@
-# Documentație API Backend
+# Restaurant Management - API Backend 
 
 ## 1. Prezentare generală
 Acest API oferă funcționalități backend pentru gestionarea alimentelor, utilizatorilor, coșului de cumpărături și facturilor. Este construit folosind **Express.js** și oferă metode pentru interacțiuni RESTful. Beneficiile includ ușurința de integrare, autentificare sigură și o gamă largă de endpoint-uri pentru diverse operații.
