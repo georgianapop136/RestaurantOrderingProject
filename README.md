@@ -22,16 +22,6 @@ Acest API oferă funcționalități backend pentru gestionarea alimentelor, util
    npm start
    ```
 
-## 3. Autentificare
-
-Autentificarea este esențială pentru protecția datelor. Metodele de autentificare acceptate includ **Token-uri JWT**. Fiecare cerere trebuie să includă un header `Authorization` cu un token valid:
-
-```json
-{
-  "Authorization": "Bearer <token-ul-tău>"
-}
-```
-
 ## 4. Endpoint-uri principale
 
 ### 4.1. Food (Produse alimentare)
